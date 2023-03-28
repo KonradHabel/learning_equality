@@ -55,7 +55,7 @@ class TrainingConfiguration:
     max_len: int = 96
     language: str = "all"              # 'all' | 'en', es', 'pt', 'fr', ...
      
-    checkpoint_folder = "./checkpoints_destilled/LaBSE"
+    checkpoint_folder = "./checkpoints_distilled/LaBSE"
     checkpoint = "weights_e39_0.6629.pth"
     
     num_workers: int = 0 if os.name == 'nt' else psutil.cpu_count(logical=False) 
