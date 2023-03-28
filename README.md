@@ -78,7 +78,7 @@ pool = (0,)
 
 Use `eval_gpu.py` for offline evaluation on trained fold and feature extraction for **topic** and **content**.
 
-For **Fold 0** pre-trained Checkpoints are provided over the following [[Link]](https://drive.google.com/file/d/1ZHMhnIQrg0_RDdNs7f44Lfr9C2sDq8EE/view?usp=share_link).
+For **Fold 0** pre-trained Checkpoints are provided over the following [[Link]](https://drive.google.com/drive/folders/102N-wVRLhzf9d5IL3r1HFdYCsCZqcNQF?usp=share_link).
 These checkpoints are trained on a single RTX 3090 for 40 Epoch using **margin = 0.16** during training. 
 
 Unzip the checkpoints to:
@@ -172,7 +172,7 @@ checkpoint_teacher = <teacher checkpoint>
 
 ### Evaluate 
 
-A checkpoint for a destilled **LaBSE** model trained on **Fold 0** using a singel RTX 3090 for 40 Epochs with **margin = 0.16** during training, is provided over the following [[Link]](https://drive.google.com/file/d/1Gm5J19okhLdnZTQLUsjfYoI0rwrLQ09i/view?usp=sharing).
+A checkpoint for a destilled **LaBSE** model trained on **Fold 0** using a singel RTX 3090 for 40 Epochs with **margin = 0.16** during training, is provided over the following [[Link]](https://drive.google.com/drive/folders/102N-wVRLhzf9d5IL3r1HFdYCsCZqcNQF?usp=share_link).
 
 Teacher and inital weights of the remaining layers come from the also provided **LaBSE** model with **F2-Score = 0.6660**
 
