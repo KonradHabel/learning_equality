@@ -152,11 +152,11 @@ For the competition results the checkpoints trained on all training data without
 [[Inference: Efficiency Prize Models]](https://www.kaggle.com/code/khabel/2nd-place-learning-equality-efficiency-prize/input)
 
 
-## Destillation (Efficiency Prize)
+## Distillation (Efficiency Prize)
 
-![Destillation](docs/destillation.jpg)
+![Distillation](docs/distillation.jpg)
 
-For destillation also use `train.py` and change:
+For distillation also use `train.py` and change:
 
 ```
 transformer_teacher: str = <name of the trained teacher model>
@@ -172,7 +172,7 @@ checkpoint_teacher = <teacher checkpoint>
 
 ### Evaluate 
 
-A checkpoint for a destilled **LaBSE** model trained on **Fold 0** using a singel RTX 3090 for 40 Epochs with **margin = 0.16** during training, is provided over the following [[Link]](https://drive.google.com/drive/folders/102N-wVRLhzf9d5IL3r1HFdYCsCZqcNQF?usp=share_link).
+A checkpoint for a distilled **LaBSE** model trained on **Fold 0** using a singel RTX 3090 for 40 Epochs with **margin = 0.16** during training, is provided over the following [[Link]](https://drive.google.com/drive/folders/102N-wVRLhzf9d5IL3r1HFdYCsCZqcNQF?usp=share_link).
 
 Teacher and inital weights of the remaining layers come from the also provided **LaBSE** model with **F2-Score = 0.6660**
 
@@ -181,7 +181,7 @@ Place the downloaded checkpoint under:
 
 ```
 learning_equality
-└── checkpoints_destilled/
+└── checkpoints_distilled/
     └── LaBSE/
         ├── config.py
         ├── log.txt	
@@ -195,14 +195,14 @@ Results with **margin = 0.16**:
 ``` 
 Model:                                                      | Fold 0 | Public | Privat 
 ---------------------------------------------------------------------------------------
-sentence-transformers/LaBSE (destilled)                     | 0.6631 | 0.6523 | 0.6907
+sentence-transformers/LaBSE (distilled)                     | 0.6631 | 0.6523 | 0.6907
 ---------------------------------------------------------------------------------------
 ```
 
 
 ## Quantization (Efficiency Prize)
 
-![Destillation](docs/quantization.jpg)
+![Distillation](docs/quantization.jpg)
 
 To save a quantized jit traced model and do feature extraction for **topic** and **content** use `eval_cpu.py`.
 
@@ -211,7 +211,7 @@ Results with **margin = 0.16**:
 ``` 
 Model:                                                      | Fold 0 | Public | Privat
 ---------------------------------------------------------------------------------------
-sentence-transformers/LaBSE (destilled + quantized)         | 0.6609 | 0.6526 | 0.6895
+sentence-transformers/LaBSE (distilled + quantized)         | 0.6609 | 0.6526 | 0.6895
 ---------------------------------------------------------------------------------------             
 ```
 
