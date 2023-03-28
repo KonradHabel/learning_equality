@@ -218,7 +218,7 @@ sentence-transformers/LaBSE (destilled + quantized)         | 0.6609 | 0.6526 | 
 
 ## Dynamic Threshold
 
-For evaluation and inference a dynamik threshold is used:
+For evaluation and inference a dynamic threshold is used:
 
 
 ![Margin](docs/ranking.jpg)
