@@ -78,7 +78,7 @@ pool = (0,)
 
 Use `eval_gpu.py` for offline evaluation on trained fold and feature extraction for **topic** and **content**.
 
-For **Fold 0** pre-trained Checkpoints are provided over the following [[Link]](https://drive.google.com/drive/folders/102N-wVRLhzf9d5IL3r1HFdYCsCZqcNQF?usp=share_link).
+For **fold 0** pre-trained checkpoints are provided over the following [[Link]](https://drive.google.com/drive/folders/102N-wVRLhzf9d5IL3r1HFdYCsCZqcNQF?usp=share_link).
 These checkpoints are trained on a single RTX 3090 for 40 Epoch using **margin = 0.16** during training. 
 
 Unzip the checkpoints to:
